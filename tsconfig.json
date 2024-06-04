@@ -1,0 +1,19 @@
+{
+  "compilerOptions": { // 编译选项
+    "target": "ES5", // 配置目标代码的版本标准
+    "module": "ESNext", // 编译目标使用的模块化标准
+    "lib": [ // 编译过程中需要引入的库文件的列表
+      "ES2016",
+      "DOM"
+    ],
+    "sourceMap": true, // 是否生成map文件
+    "strict": true, // 是否启用所有严格类型检查选项
+    "removeComments": true, // 是否移除注释
+    "esModuleInterop": true, // 启用es模块化交互非es模块化导出
+    "moduleResolution": "Node", // 设置解析模块的模式
+    "isolatedModules": true, // 是否启用单独编译模式(每个文件都是独立的模块)
+  },
+  "include": [ // 需要编译的文件或目录
+    "./src"
+  ],
+}

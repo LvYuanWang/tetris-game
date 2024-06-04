@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="viewContainer">
+                <div class="container-top-border">
+                    <div style="display: flex;">
+                        <div class="container-top-border-solid" style="margin-right: 7px;"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-dashed"></div>
+                        <div class="container-top-border-solid" style="margin-left: 7px;"></div>
+                    </div>
+                </div>
+                <div class="gameContainer">
+                    <div class="game_view">
+                        <div id="panel"></div>
+                        <div class="tip">
+                            <div class="scores">
+                                <p class="view_tip_text">得分</p>
+                                <span class="view_tip_num" id="scores"></span>
+                            </div>
+                            <div class="deleteLine">
+                                <p class="view_tip_text">消除行</p>
+                                <span class="view_tip_num" id="deleteLine"></span>
+                            </div>
+                            <div class="next">
+                                <p class="view_tip_text">下一个</p>
+                                <div id="next"></div>
+                            </div>
+                            <div class="start">
+                                <p class="view_tip_text">游戏状态</p>
+                                <span class="view_tip_num" id="start_text"></span>
+                            </div>
+                            <div class="max-scores">
+                                <p>最高得分</p>
+                                <span class="view_tip_num" id="max_scores"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control_view">
+                    <div class="ctl_view_container">
+                        <div class="gameStart_container">
+                            <div class="ctl_btn" id="pauseBtn">
+                                <div class="btn"></div>
+                                <span>开始/暂停(Enter)</span>
+                            </div>
+                            <div class="ctl_btn" id="renewBtn">
+                                <div class="btn"></div>
+                                <span>重新开始(R)</span>
+                            </div>
+                        </div>
+                        <div class="ctlSquare_container">
+                            <div class="ctl_btn" id="ctl_squ_directlyDown">
+                                <div class="btn"></div>
+                                <span class="ctl_btn_text" style="bottom: 80px;">掉落(SPACE)</span>
+                            </div>
+                            <div class="ctl_squ_direction_container">
+                                <div class="ctl_X_direction">
+                                    <div class="ctl_btn" id="left_mobile_btn">
+                                        <div class="btn"></div>
+                                        <span class="ctl_btn_text">左移</span>
+                                    </div>
+                                    <div class="ctl_btn" id="right_mobile_btn">
+                                        <div class="btn"></div>
+                                        <span class="ctl_btn_text">右移</span>
+                                    </div>
+                                </div>
+                                <div class="ctl_Y_direction" style="flex-direction: column;">
+                                    <div class="ctl_btn" id="rotate_mobile_btn">
+                                        <span>旋转</span>
+                                        <div class="btn"></div>
+                                    </div>
+                                    <div class="ctl_btn" id="bottom_mobile_btn">
+                                        <div class="btn"></div>
+                                        <span>下移</span>
+                                    </div>
+                                </div>
+                                <span class="arrow_tip">
+                                    <span class="arrow"
+                                        style="transform: translateY(0px) rotate(-90deg) scaleY(2);"></span>
+                                    <span class="arrow"
+                                        style="transform: translateY(0px) rotate(90deg) scaleY(2);"></span>
+                                </span>
+                                <span class="arrow_tip" style="flex-direction: column;">
+                                    <span class="arrow"></span>
+                                    <span class="arrow" style="transform: rotate(180deg) scaleY(2);"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
